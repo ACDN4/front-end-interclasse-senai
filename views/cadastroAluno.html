@@ -17,25 +17,26 @@
         <h2>Cadastro de Alunos</h2>
         <form action="#" id="form-cadastrar_aluno">
             <div class="input-field">
-                <input type="text" id="name" placeholder="name">
+                <input type="text" id="name" placeholder="Nome do aluno">
                 <label for="user">Nome do aluno</label>
             </div>
-            
-            <div class="input-field">
-                <input type="text" id="curso" placeholder="curso">
-                <label for="curso">Curso</label>
-            </div>
 
+            <div class="input-field">
+                <input type="number" id="idade" placeholder="Idade do aluno">
+                <label for="user">Idade do aluno</label>
+            </div>
+            
+            <h4>Curso</h4>
+            <div class="select">
+                <select nome="format" class="format" id="curso-select">
+                    <option selected disabled value="0"></option>
+                </select>
+            </div>
             <h4>Modalidade</h4>
             <div class="select">
-                <select nome="format" id="format">
-                    <option selected disabled></option>
-                    <option value="m1">Futsal</option>
-                    <option value="m2">Vôlei</option>
-                    <option value="m3">Tênis de Mesa</option>
-                    <option value="m4">Xadrez</option>
-                    <option value="m5">Pebolim</option>
-                    <option value="m6">Queimada</option>
+                <select nome="format" class="format" id="modalides-select">
+                    <option selected disabled value="0"></option>
+                    
                 </select>
             </div>
 
@@ -55,7 +56,8 @@
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../assets/js/cad.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="../assets/js/cadAlunos.js"></script>
 
 </body>
 </html>

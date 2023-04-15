@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         var password = document.getElementById("password").value;
 
         if (user == "admin" && password == "admin") {
-            window.location.href = 'cadastro.html'
+            window.location.href = 'cadastros.html'
         } else {
             Swal.fire(
                 'informações inválidas',
@@ -21,23 +21,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
     });
 })
-
-
-var formCadastroAluno = document.getElementById("form-cadastrar_aluno")
-
-formCadastroAluno.addEventListener("submit", function (e) {
-    e.preventDefault();
-    Swal.fire(
-        'Sucesso',
-        'O cadastro foi realizado!',
-        'success'
-    ).then((result) => {
-        if (result.isConfirmed == true) {
-            window.location.replace("./cadastro.html");
-        }
-    })
-    })
-
 
     var formCadastroTime = document.getElementById("form-cadastrar_time")
 

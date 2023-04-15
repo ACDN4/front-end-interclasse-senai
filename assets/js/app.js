@@ -46,7 +46,7 @@ async function getJogos() {
             divVs.appendChild(spanModalidade)
 
             divImagem = document.createElement("img")
-            divImagem.setAttribute("src", "../pastas-nicols/assets/imgs/versus.png");
+            divImagem.setAttribute("src", "/assets/imgs/versus.png");
             divImagem.setAttribute("alt", "Imagem de versus");
 
             divVs.appendChild(divImagem)
@@ -107,7 +107,7 @@ async function getJogos() {
             divVs.appendChild(spanModalidade)
 
             divImagem = document.createElement("img")
-            divImagem.setAttribute("src", "../pastas-nicols/assets/imgs/versus.png");
+            divImagem.setAttribute("src", "/assets/imgs/versus.png");
             divImagem.setAttribute("alt", "Imagem de versus");
 
             divVs.appendChild(divImagem)

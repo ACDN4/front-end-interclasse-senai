@@ -68,7 +68,7 @@ $('#form-cadastro').on('submit', (e) => {
     idTime2 = $('#select-times2').val()
     dataJogo = $('#date').val()
     horarioJogo = $('#horario').val()
-    if (dataJogo == '' || horarioJogo == '' || idTime1 == '' || idTime2 == '') {
+    if (dataJogo == '' || horarioJogo == '' || idTime1 == '' || idTime2 == '' || idTime1 == null || idTime2 == null) {
         Swal.fire(
             'Valores inválidos',
             'Preencha todos os campos, para adicionar um jogo',

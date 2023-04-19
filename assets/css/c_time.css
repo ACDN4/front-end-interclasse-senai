@@ -144,3 +144,8 @@ select:focus{
     border-bottom: 1px solid #ff0000;
     color: #ff0000;
 }
+
+#inputs{
+    max-height: 350px;
+    overflow-y: scroll;
+}

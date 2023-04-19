@@ -1,7 +1,7 @@
-let contador = 3
+let contador = 4
 
 function add_input(){
-    if (contador < 10){
+    if (contador <= 10){
 
         jogador_input = `
         <div class="bloco">

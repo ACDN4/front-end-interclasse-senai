@@ -86,6 +86,9 @@ button:hover{
 #logo{
     top: 67px;
     left: 842px;
+    margin: -35px;
+    margin-left: -50px;
+    margin-top: 28px;
     position: absolute;
     filter: drop-shadow(0px 0px 4px rgba(152, 20, 20, 0.9));
 }

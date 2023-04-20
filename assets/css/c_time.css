@@ -36,9 +36,37 @@ h2{
     padding: 50px 70px;
 }
 
+input{
+    width: 100%;
+    height: 46px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ff0000;
+    color: #ff0000;
+    transition: .25s ease-in-out;
+}
+
+.input-field{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ff0000;
+    transform: translateY(18px);
+    transition: .25s ease-in-out;
+    font-weight: bold;
+}
+
 input:focus{
     border-bottom: 1px solid #ff0000;
     box-shadow: 0 1px 0 0 #ff0000;
+    font-weight: bold;
+
 }
 input:focus + label{
     transform: translateY(-14px) scale(.8);
@@ -115,16 +143,6 @@ select {
     margin-bottom: 20px;
 }
 
-input {
-    border: 1px solid #fff;
-    width: 100%;
-    height: 46px;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: #ff0000;
-    transition: .25s ease-in-out;
-}
 
 .select{
     margin-bottom: 15px;

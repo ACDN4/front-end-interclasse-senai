@@ -83,7 +83,7 @@ formCadastroAluno.addEventListener("submit", async function (e) {
     $.ajax({
         type: 'POST',
         url: 'http://127.0.0.1:8000/api/v1/atletas/',
-        data : `{"nome":"${nomeAluno}", "idade":"${idadeAluno}", "curso_id":${cursoId}, "modalidade_id": ${modalidadeId}, "face_url": "${nomeArquivo[0]}"}`,
+        data : `{"nome":"${nomeAluno}", "idade":"${idadeAluno}", "curso_id":${cursoId}, "modalidade_id": ${modalidadeId}, "face_url": "${timestamp}.${nomeArquivo[1]}"}`,
         contentType: "application/json",
         dataType: 'json',
         success: dados => {
@@ -101,7 +101,7 @@ formCadastroAluno.addEventListener("submit", async function (e) {
   // obtém o arquivo do FormData
     const file = formData.get('image');
 
-    const renamedFile = new File([file], `${timestamp}${nomeArquivo[0]}.${nomeArquivo[1]}`);
+    const renamedFile = new File([file], `${timestamp}.${nomeArquivo[1]}`);
 
     const renamedFormData = new FormData();
     renamedFormData.append('image', renamedFile);

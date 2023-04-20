@@ -63,7 +63,8 @@ var formCadastroAluno = document.getElementById("form-cadastrar_aluno")
 
 formCadastroAluno.addEventListener("submit", async function (e) {
     e.preventDefault();
-    
+   
+    var timestamp = new Date().getTime();
     var nomeAluno = $('#name').val()
     var idadeAluno = $('#idade').val()
     var modalidadeId = $('#modalides-select').val()
@@ -95,13 +96,19 @@ formCadastroAluno.addEventListener("submit", async function (e) {
         }
     })
 
-    const formData = new FormData();
-    const imageInput = document.querySelector('input[name="image"]');
-    formData.append('image', imageInput.files[0]);
+    
+    const formData = new FormData(formCadastroAluno);
+  // obtém o arquivo do FormData
+    const file = formData.get('image');
+
+    const renamedFile = new File([file], `${timestamp}${nomeArquivo[0]}.${nomeArquivo[1]}`);
+
+    const renamedFormData = new FormData();
+    renamedFormData.append('image', renamedFile);
     
     const response = await fetch('http://127.0.0.1:8000/api/v1/atletas/upload', {
         method: 'POST',
-        body: formData
+        body: renamedFormData
       }).then(response => response.json())
       .then(json => console.log(json))
       .catch(error => console.log(error.message));

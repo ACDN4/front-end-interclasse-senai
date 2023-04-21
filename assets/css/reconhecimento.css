@@ -1,6 +1,11 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    user-select: none;
 }
 
 .navbar1{
@@ -15,40 +20,98 @@
     height: 50px;
     margin-top: 50px;
 }
-.titulo{
-    width: 400px;
-    height: 30px;
-    background-color: black;
-    margin-top: 150px;
-    margin-left: 500px;
+
+
+main{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-}
-.titulo h5{
-    color: white;
-}
-.jogos{
-    width: 400px;
-    height: 50px;
-    background-color: #d9d9d9;
-    margin-top: 20px;
-    margin-left: 500px;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
 }
 
-.jogos p {
-    text-align: center;
+
+#informacoes{
+    width: 800px;
+    height: 700px;
+    border: 1px solid red;
 }
+
+
+h4{
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d9251c;
+}
+
+.player--games{
+    margin-top: 20px;
+}
+
 .tela{
-    width: 400px;
+    width: 450px;
     height: 400px;
-    background-color: black;
-    margin-left: 1000px;
-    margin-top: -105px;
+    background-color: rgba(0, 0, 0, 0.918);
     border-radius: 30px;
 }
 
+.card-jogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
 
-    
+.lado1,
+.lado2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9251c;
+    width: 300px;
+    height: 60px;
+}
+
+.title--team {
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.lado2 {
+    border-radius: 0 5px 5px 0;
+}
+
+.lado1 {
+    border-radius: 5px 0px 0px 5px;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.vs {
+    background-color: #d9d9d9;
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vs img {
+    width: 50px;
+    height: 50px;
+}
+
+.game--time,
+.game--modalidade {
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    color: #d9d9d9;
+    text-transform: uppercase;
+}

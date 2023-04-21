@@ -9,7 +9,7 @@ function getChampions() {
 
     $.ajax({
         type: 'GET',
-        url: `http://localhost:8000/api/v1/campeao`,
+        url: `https://interclasse.azurewebsites.net/api/v1/campeao`,
         dataType: 'json',
         success: campeoes => {
     

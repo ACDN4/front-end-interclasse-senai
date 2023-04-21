@@ -1,7 +1,7 @@
 function getModalides() {
     $.ajax({
         type: 'GET',
-        url: `http://localhost:8000/api/v1/modalidades/`,
+        url: `https://interclasse.azurewebsites.net/api/v1/modalidades/`,
         dataType: 'json',
         success: modalidades => {
     
@@ -29,7 +29,7 @@ $('#modalidade-select').on('change', function (e) {
     $('#select-time').empty()
     $.ajax({
         type: 'GET',
-        url: `http://localhost:8000/api/v1/times/modalidade/${Idmodalidade}`,
+        url: `https://interclasse.azurewebsites.net/api/v1/times/modalidade/${Idmodalidade}`,
         dataType: 'json',
         success: times => {
             times.forEach(time => {
@@ -72,7 +72,7 @@ $('#form-champion').on('submit', (e) => {
     } else{
         $.ajax({
             type: 'POST',
-            url: 'http://127.0.0.1:8000/api/v1/campeao',
+            url: 'https://interclasse.azurewebsites.net/api/v1/campeao',
             data : `{ "time":"${idTime}","modalidade_id":"${modalidadeId}" }`,
             contentType: "application/json",
             dataType: 'json',

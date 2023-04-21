@@ -5,7 +5,7 @@ let atletas_global = ''
 function getModalides() {
     $.ajax({
         type: 'GET',
-        url: `http://localhost:8000/api/v1/modalidades/`,
+        url: `https://interclasse.azurewebsites.net/api/v1/modalidades/`,
         dataType: 'json',
         success: modalidades => {
 
@@ -92,7 +92,7 @@ $('#modalidade-select').on('change', function (e) {
     clearInputs()
     $.ajax({
         type: 'GET',
-        url: `http://localhost:8000/api/v1/atletas/modalidade/${Idmodalidade}`,
+        url: `https://interclasse.azurewebsites.net/api/v1/atletas/modalidade/${Idmodalidade}`,
         dataType: 'json',
         success: atletas => {
             atletas_global = atletas
@@ -133,7 +133,7 @@ $('#form-cad-time').on('submit', (e) => {
     } else {
         $.ajax({
             type: 'POST',
-            url: 'http://127.0.0.1:8000/api/v1/times',
+            url: 'https://interclasse.azurewebsites.net/api/v1/times',
             data: `{
                 "pontos":"0", 
                 "nome":"${nomeTime}",

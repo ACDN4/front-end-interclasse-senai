@@ -77,7 +77,7 @@ $('#form-cadastro').on('submit', (e) => {
     } else{
         $.ajax({
             type: 'POST',
-            url: 'http://127.0.0.1:8000/api/v1/jogos/',
+            url: 'https://interclasse.azurewebsites.net/api/v1/jogos/',
             data : `{"time1":"${idTime1}", "time2":"${idTime2}", "data_do_jogo":"${dataJogo} ${horarioJogo}:00"}`,
             contentType: "application/json",
             dataType: 'json',

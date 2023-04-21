@@ -34,7 +34,7 @@ function preencherDados(dados) {
 function getDados() {
     $.ajax({
         type: 'GET',
-        url: `http://localhost:8000/api/v1/atletas/ultimapesquisa`,
+        url: `https://interclasse.azurewebsites.net/api/v1/atletas/ultimapesquisa`,
         dataType: 'json',
         success: dados => {
             

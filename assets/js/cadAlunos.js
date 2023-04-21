@@ -1,7 +1,7 @@
 function getModalides() {
     $.ajax({
         type: 'GET',
-        url: `http://localhost:8000/api/v1/modalidades/`,
+        url: `https://interclasse.azurewebsites.net/api/v1/modalidades/`,
         dataType: 'json',
         success: modalidades => {
     

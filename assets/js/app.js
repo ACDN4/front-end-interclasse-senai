@@ -1,6 +1,6 @@
 let quantidade = 1
 async function getJogos() {
-    let url = `http://localhost:8000/api/v1/jogos/today`
+    let url = `https://interclasse.azurewebsites.net/api/v1/jogos/today`
 
     let results = await fetch(url)
     let json = await results.json()

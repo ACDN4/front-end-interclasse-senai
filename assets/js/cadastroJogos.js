@@ -1,7 +1,7 @@
 function getModalides() {
     $.ajax({
         type: 'GET',
-        url: `http://localhost:8000/api/v1/modalidades/`,
+        url: `https://interclasse.azurewebsites.net/api/v1/modalidades/`,
         dataType: 'json',
         success: modalidades => {
     
@@ -29,7 +29,7 @@ $('#modalides-select').on('change', function (e) {
     $('#select-times2').empty()
     $.ajax({
         type: 'GET',
-        url: `http://localhost:8000/api/v1/times/modalidade/${Idmodalidade}`,
+        url: `https://interclasse.azurewebsites.net/api/v1/times/modalidade/${Idmodalidade}`,
         dataType: 'json',
         success: times => {
             

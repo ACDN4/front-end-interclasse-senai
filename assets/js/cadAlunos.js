@@ -27,7 +27,7 @@ function getCursos() {
     // curso-select
     $.ajax({
         type: 'GET',
-        url: `http://localhost:8000/api/v1/cursos/`,
+        url: `https://interclasse.azurewebsites.net/api/v1/cursos/`,
         dataType: 'json',
         success: cursos => {
     
@@ -82,7 +82,7 @@ formCadastroAluno.addEventListener("submit", async function (e) {
     // cadastrando
     $.ajax({
         type: 'POST',
-        url: 'http://127.0.0.1:8000/api/v1/atletas/',
+        url: 'https://interclasse.azurewebsites.net/api/v1/atletas/',
         data : `{"nome":"${nomeAluno}", "idade":"${idadeAluno}", "curso_id":${cursoId}, "modalidade_id": ${modalidadeId}, "face_url": "${timestamp}.${nomeArquivo[1]}"}`,
         contentType: "application/json",
         dataType: 'json',
@@ -106,7 +106,7 @@ formCadastroAluno.addEventListener("submit", async function (e) {
     const renamedFormData = new FormData();
     renamedFormData.append('image', renamedFile);
     
-    const response = await fetch('http://127.0.0.1:8000/api/v1/atletas/upload', {
+    const response = await fetch('https://interclasse.azurewebsites.net/api/v1/atletas/upload', {
         method: 'POST',
         body: renamedFormData
       }).then(response => response.json())

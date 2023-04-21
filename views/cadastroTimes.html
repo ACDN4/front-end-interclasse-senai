@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de jogo</title>
+    <title>Cadastro de times</title>
     <link rel="stylesheet" href="../assets/css/c_time.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -33,12 +33,9 @@
             <div class="bloco">
                 <h1>Modalidade</h1>
                 <label for="select-grouped"></label>
-                <select id="select-grouped" name="select-grouped">
+                <select id="modalidade-select" name="select-grouped">
                     <option value="0"></option>
-                    <option value="option1">Pebolim</option>
-                    <option value="option2">Futebol</option>
-                    <option value="option3">Vôlei</option>
-                    <option value="option4">Tênis de mesa</option>
+                   
                 </select>
             </div>
 
@@ -46,36 +43,33 @@
                 <div class="bloco">
                     <h1>Jogador 01</h1>
                     <label for="select-grouped"></label>
-                    <select id="select-grouped" name="select-grouped">
+                    <select id="select-player1" class="select-player" name="select-grouped">
                         <option value="0"></option>
-                        <option value="option1">Nicole Siqueira</option>
-                        <option value="option2">Ângelo Carne</option>
+                       
                     </select>
                 </div>
 
                 <div class="bloco">
                     <h1>Jogador 02</h1>
                     <label for="select-grouped"></label>
-                    <select id="select-grouped" name="select-grouped">
+                    <select id="select-player2" class="select-player" name="select-grouped">
                         <option value="0"></option>
-                        <option value="option1">Diego Alencar</option>
-                        <option value="option2">Carlos Eduardo</option>
+                     
                     </select>
                 </div>
 
                 <div class="bloco">
                     <h1>Jogador 03</h1>
                     <label for="select-grouped"></label>
-                    <select id="select-grouped" name="select-grouped">
+                    <select id="select-player3" class="select-player" name="select-grouped">
                         <option value="0"></option>
-                        <option value="option1">Gabriel Bonaretti</option>
-                        <option value="option2">Diego Castan</option>
+                     
                     </select>
                 </div>
 
             </section>
 
-            <button class="add" onclick="add_input()"><i class="fa-solid fa-plus"></i></button>
+            <button class="add" id="add-input"><i class="fa-solid fa-plus"></i></button>
 
             <div id="center">
                 <button class="cadastro" type="submit">CADASTRAR</button>

@@ -8,8 +8,7 @@
 }
 
 body{
-    background: url(../imgs/fundo.png);
-    background-size: cover;
+    background-image: linear-gradient(to bottom,red 50%, white 50%);
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;

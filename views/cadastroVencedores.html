@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,45 +9,45 @@
     <title>Cadastro de vencedor</title>
     <link rel="stylesheet" href="../assets/css/c_jogos.css">
 </head>
+
 <body>
     <div class="container">
-    
+
         <div id="logo">
             <img src="../assets/imgs/logo.png" alt="">
         </div>
-        
+
         <h2>Cadastro de vencedores</h2>
-        
+        <form action="#" id="form-champion">
         <div class="bloco">
             <h1>Modalidade</h1>
             <label for="select-grouped"></label>
-            <select id="select-grouped" name="select-grouped">
-                <optgroup label="Modalidades">
-                    <option value="option1">Pebolim</option>
-                    <option value="option2">Futebol</option>
-                    <option value="option3">Vôlei</option>
-                    <option value="option4">Tênis de mesa</option>
-                </optgroup>
-                </select>
-        </div>
-        
-        <div class="bloco">
-            <h1>Time Vencedor</h1>
-            <label for="select-grouped"></label>
-            <select id="select-grouped" name="select-grouped">
-                <optgroup label="Modalidades">
-                    <option value="option1">Teste</option>
-                    <option value="option2"></option>
-                    <option value="option3"></option>
-                    <option value="option4"></option>
-                </optgroup>
-                </select>
+            <select id="modalidade-select" name="select-grouped">
+                <option value="0"></option>
+            </select>
         </div>
 
-            <div id="center">
-                <button type="submit">SALVAR</button>  
-            </div>
+        <div class="bloco">
+            <h1>Time Campeão</h1>
+            <label for="select-grouped"></label>
+            <select id="select-time" name="select-grouped">
+                <option value="0"></option>
+            </select>
+        </div>
+
+        <div id="center">
+            <button type="submit">SALVAR</button>
+        </div>
         </form>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../assets/js/cadWin.js"></script>
 </body>
+
 </html>

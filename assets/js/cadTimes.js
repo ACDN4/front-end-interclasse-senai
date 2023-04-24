@@ -133,7 +133,7 @@ $('#form-cad-time').on('submit', (e) => {
     } else {
         $.ajax({
             type: 'POST',
-            url: 'https://interclasse.azurewebsites.net/api/v1/times',
+            url: 'https://interclasse.azurewebsites.net/api/v1/times/time',
             data: `{
                 "pontos":"0", 
                 "nome":"${nomeTime}",

@@ -31,10 +31,10 @@ function preencherDados(dados) {
     
 }
 
-function getDados() {
-    $.ajax({
+async function getDados() {
+    await $.ajax({
         type: 'GET',
-        url: `https://interclasse.azurewebsites.net/api/v1/atletas/ultimapesquisa`,
+        url: `http://localhost:8000/api/v1/atletas/ultimapesquisa`,
         dataType: 'json',
         success: dados => {
             

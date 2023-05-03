@@ -53,11 +53,11 @@ async function getDados() {
 
         },
         error: e => {
-            Swal.fire(
-                'Erro de conexão!',
-                'Desculpe, mas não conseguimos nos conectar ao servidor, tente novamente mais tarde',
-                'error'
-              )
+            //Swal.fire(
+               // 'Erro de conexão!',
+               // 'Desculpe, mas não conseguimos nos conectar ao servidor, tente novamente mais tarde',
+              //  'error'
+             // )
         }
     })
 }
